@@ -1,0 +1,88 @@
+.header.blue {border-bottom-color: #669cc9}
+h3.bigger {font-size: 23px;font-weight: inherit}
+.registerLinck{cursor: pointer}
+
+/* Pour le float des labels comme Gmail*/
+.field-wrapper{position: relative;margin-bottom: 10px;}
+.field-wrapper input{border: 1px solid #BBCAE8;padding: 10px;border-radius: 4px;width: 100%;
+    color: #555151;
+}
+.field-wrapper input:focus{border:1px solid #1A73E8;}
+.field-wrapper .field-placeholder{font-size: 16px;position: absolute;/* background: #fff; */
+    bottom: 10px;-webkit-box-sizing: border-box;box-sizing: border-box;color: #80868b;
+    left: 8px;padding: 0 8px;
+    -webkit-transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    z-index: 1;text-align: left;width: 100%;
+}
+.field-wrapper .field-placeholder span{background: #ffffff;padding: 0px 8px;}
+.field-wrapper input:not([disabled]):focus~.field-placeholder{color:#1A73E8;}
+.field-wrapper input:not([disabled]):focus~.field-placeholder,
+.field-wrapper.hasValue input:not([disabled])~.field-placeholder{
+    -webkit-transform: scale(.75) translateY(-28px) translateX(-49px);
+    transform: scale(.75) translateY(-28px) translateX(-49px);
+}
+/* Fin float des labels comme Gmail*/
+
+/* Pour le float des labels mis à jours du thème */
+.form-floating > label {padding: .7rem .75rem}
+.form-floating > .form-select {font-size: 13px}
+.form-floating > .form-select ~ label {font-size: 14px;color: #060606;}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label{
+    opacity: .6;
+    transform: scale(.8) translateY(-.9rem) translateX(.0rem);
+}
+/* Fin float des labels mis à jours du thème */
+.validation.label-white.label-success {color: #7b9e6c;border-color: none;
+    background-color: transparent;font-weight: bold;}
+.validation.label-white.label-danger {color: #bd7f75;border-color: none;
+    background-color: transparent;font-weight: bold;}
+.required{color: #ff0000;font-weight: bold;font-size: 15px;}
+
+/* Pour le treeView */
+.dotted{color: #67B2DD}
+.treeview .list-group{margin: 1px 0; border: none;}
+.treeview .list-group .list-group-item{margin: 0px;padding: 0px;border:none}
+.treeview .list-group .list-group-item.li-classe, .treeview .list-group .list-group-item.li-rubrique, .treeview .list-group .list-group-item.li-poste, .treeview .list-group .list-group-item.li-compte {
+    border-left: 1px dotted #67B2DD;
+    line-height: 31px;
+}
+.treeview .list-group.ul-rubrique, .treeview .list-group.ul-poste, .treeview .list-group.ul-compte {
+    margin-left: 30px;
+}
+.plus-classe, .moins-classe, .plus-rubrique, .moins-rubrique, .plus-poste, .moins-poste {cursor: pointer;}
+.li-classe-selected{background-color: #e3f0fb;}
+.li-rubrique-selected{background-color: #fba60b54}
+.li-poste-selected{background-color: #fb210b26}
+/* Fin treeView */
+
+.table.table-bordered > thead > tr > th {
+    background-color: #585858;
+    color: #fff;
+}
+.form-control.form-table{
+    padding: 0px;height: auto;border: 0px;background-color: transparent;color: #393939;font-size: 12px;width: 100%
+}
+
+input[type="text"]:focus{background-color: transparent;color: #393939}
+
+.table-striped > tbody > tr.selectedRow > td {background-color: #ea0f3e6e}
+.page-header-title {
+    margin: 0 0 12px;
+    border-bottom: 1px dotted #E2E2E2;
+    padding-bottom: 16px;
+    padding-top: 7px;
+}
+.page-header-title h1 {
+    padding: 0;
+    margin: 0 8px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #2679B5;
+}
+
+.aside-nav li {width: 100%;}
+.sidebar.h-sidebar .nav-list > li > a {
+    line-height: 15px;
+    padding: 11px 15px;
+}
